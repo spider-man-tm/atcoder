@@ -3,16 +3,17 @@
         {
             "name": "Mac",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "/usr/local/include/**"
             ],
             "defines": [],
             "macFrameworkPath": [
                 "/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks"
             ],
-            "compilerPath": "/Users/takayoshi_makabe/anaconda3/bin/clang",
+            "compilerPath": "/usr/local/bin/g++",
             "cStandard": "c11",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "clang-x64"
+            "cppStandard": "c++14",
+            "intelliSenseMode": "gcc-x64"
         }
     ],
     "version": 4
