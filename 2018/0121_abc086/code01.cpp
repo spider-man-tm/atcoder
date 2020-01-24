@@ -7,8 +7,7 @@ int main() {
 
   if ((a*b)%2 == 0) {
       cout << "Even" << endl;
-  }
-  else {
+  } else {
       cout << "Odd" << endl;
   }
 }

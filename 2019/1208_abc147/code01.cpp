@@ -7,8 +7,7 @@ int main() {
     int su = a+b+c;
     if (su>=22) {
         cout << "bust" << endl;
-    }
-    else {
+    } else {
         cout << "win" << endl;
     }
 }

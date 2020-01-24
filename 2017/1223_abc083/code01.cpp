@@ -9,11 +9,9 @@ int main() {
 
   if (left > right) {
       cout << "Left" << endl;
-  }
-  else if (left < right) {
+  } else if (left < right) {
       cout << "Right" << endl;
-  }
-  else {
+  } else {
       cout << "Balanced" << endl;
   }
 }

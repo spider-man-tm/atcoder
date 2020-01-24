@@ -14,14 +14,11 @@ int main() {
         }
         if (k=="+") {
             A += n;
-        }
-        else if (k=="-") {
+        } else if (k=="-") {
             A -= n;
-        }
-        else if (k=="*") {
+        } else if (k=="*") {
             A *= n;
-        }
-        else {
+        } else {
             A /= n;
         }
         cout << i+1 << ":" << A << endl;
