@@ -1,5 +1,11 @@
 {
-    "python.pythonPath": "/usr/bin/python",
+    "python.pythonPath": "/Users/takayoshi_makabe/anaconda3/bin/python",
+    "[python]": {
+        "editor.tabSize": 4,                      // インデントレベルは「4」
+        //"editor.formatOnSave": true,              // 保存時に自動整形を行う
+        //"editor.formatOnPaste": false,            // ペースト時に自動整形を行わない
+        //"editor.formatOnType": false,             // 入力後に自動整形を行わない
+      },
     "files.associations": {
         "iostream": "cpp",
         "ostream": "cpp",
