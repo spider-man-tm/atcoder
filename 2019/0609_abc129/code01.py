@@ -1,4 +1,2 @@
-p, q, r = list(map(int, input().split()))
-list_ = sorted(list_)
-
+list_ = sorted(list(map(int, input().split())))
 print(list_[0]+list_[1])
