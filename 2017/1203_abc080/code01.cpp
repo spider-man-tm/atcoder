@@ -2,10 +2,9 @@
 using namespace std;
     
 int main() {
-    int a;
-    cin >> a;
-    if ((a/1000) == (a%1000)/100 && (a%1000)/100 == (a%100)/10 || (a%1000)/100 == (a%100)/10 && (a%100)/10 == (a%10))
-        cout << "Yes" << endl;
-    else  
-        cout << "No" << endl;
+    int n, a, b;
+    cin >> n >> a >> b;
+    int p1 = n * a;
+    int p2 = b;
+    cout << min(p1, p2) << endl;
 }
