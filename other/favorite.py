@@ -32,17 +32,31 @@ print(_list)
 """
 
 
+
 # listの要素を数える
 import collections
 
 l = ['a', 'a', 'a', 'a', 'b', 'c', 'c']
 c = collections.Counter(l)
-print(c)
-# Counter({'a': 4, 'c': 2, 'b': 1})
-print(type(c))
-# <class 'collections.Counter'>
-print(issubclass(type(c), dict))
-# True
+print(c)   # Counter({'a': 4, 'c': 2, 'b': 1})
+print(type(c))   # <class 'collections.Counter'>
+print(issubclass(type(c), dict))   # True
+
+
+
+# 辞書の最大値を取ってくる
+max_kv_list = [kv for kv in d.items() if kv[1] == max(d.values())]
+print(max_kv_list)
+# [('a', 100), ('d', 100)]
+
+max_k_list = [kv[0] for kv in d.items() if kv[1] == max(d.values())]
+print(max_k_list)
+# ['a', 'd']
+
+
+
+# a ~ z までの辞書を生成(valueの初期値は0)
+d = {chr(i): 50 for i in range(97, 97+26)}
 
 
 
