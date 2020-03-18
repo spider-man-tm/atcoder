@@ -39,8 +39,6 @@ import collections
 l = ['a', 'a', 'a', 'a', 'b', 'c', 'c']
 c = collections.Counter(l)
 print(c)   # Counter({'a': 4, 'c': 2, 'b': 1})
-print(type(c))   # <class 'collections.Counter'>
-print(issubclass(type(c), dict))   # True
 
 
 
@@ -61,3 +59,4 @@ d = {chr(i): 50 for i in range(97, 97+26)}
 
 
 # 組み合わせとか順列の列挙
+# https://note.nkmk.me/python-math-factorial-permutations-combinations/
