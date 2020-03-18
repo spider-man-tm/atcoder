@@ -1,0 +1,73 @@
+{
+	"NGCD": {
+		"prefix": "ngcd",
+		"body":[
+			"def gcd(l):",
+			"\timport fractions",
+			"\tans = l[0]",
+			"\tfor i in range(1, len(l)):",
+			"\t\tans = fractions.gcd(ans, l[i])",
+			"\treturn ans"
+		],
+		"description": "n個の数の最大公約数を求める"
+	},
+
+	"LCM": {
+		"prefix": "lcm",
+		"body": [
+			"def lcm(m, n):",
+			"\tfrom fractions import gcd",
+			"\treturn (m * n) // gcd(m, n)"
+		],
+		"description": "2数の最小公倍数を求める"
+	},
+
+	"NLCM": {
+		"prefix": "nlcm",
+		"body": [
+			"def lcm(a):",
+			"\tfrom fractions import gcd",
+			"\tx = a[0]",
+			"\tfor i in range(1, len(a)):",
+			"\t\tx = (x * a[i]) // gcd(x, a[i])",
+			"\treturn x"
+		],
+		"description": "n個の数の最小公倍数を求める"
+	},
+
+	"IS_PRIME": {
+		"prefix": "is_prime",
+		"body": [
+			"def is_prime(n):",
+			"\tif n == 1:",
+			"\t\treturn False",
+			"\tfor i in range(2,int(n**0.5)+1):",
+			"\t\tif n % i == 0:",
+			"\t\t\treturn False",
+			"\treturn True"
+		],
+		"description": "素数判定"
+	},
+
+	"DIGSUM": {
+		"prefix": "digsum",
+		"body": [
+			"def digsum(n):",
+			"\ttotal = 0",
+			"\twhile n > 0:",
+			"\t\ttotal += n%10",
+			"\t\tn /= 10",
+			"\t\tn = int(n)",
+			"\treturn total"
+		],
+		"description": "桁和"
+	},
+
+	"LIST_INPUT": {
+		"prefix": "list(map(int, input().split()))",
+		"body": [
+			"list(map(int, input().split()))"
+		],
+		"description": "listの標準入力"
+	}
+}
