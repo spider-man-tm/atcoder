@@ -76,3 +76,22 @@ d = {chr(i): 50 for i in range(97, 97+26)}
 
 # 組み合わせとか順列の列挙
 # https://note.nkmk.me/python-math-factorial-permutations-combinations/
+# (以下、よく使う例)
+l = ['a', 'b', 'c', 'd']
+c = itertools.combinations(l, 2)
+print(type(c))
+# <class 'itertools.combinations'>
+for v in itertools.combinations(l, 2):
+    print(v)
+# ('a', 'b')
+# ('a', 'c')
+# ('a', 'd')
+# ('b', 'c')
+# ('b', 'd')
+# ('c', 'd')
+
+# 組み合わせの総数を出す
+def combinations_count(n, r):
+    return math.factorial(n) // (math.factorial(n - r) * math.factorial(r))
+print(combinations_count(4, 2))
+# 6
