@@ -69,5 +69,13 @@
 			"list(map(int, input().split()))"
 		],
 		"description": "listの標準入力"
-	}
+	},
+
+	"NUMER_INPUT": {
+		"prefix": "map(int, input().split())",
+		"body": [
+			"map(int, input().split())"
+		],
+		"description": "numberの標準入力"
+	}	
 }
