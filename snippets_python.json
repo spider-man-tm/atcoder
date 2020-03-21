@@ -77,5 +77,26 @@
 			"map(int, input().split())"
 		],
 		"description": "numberの標準入力"
-	}	
+	},
+
+	"FACTORIZATION": {
+		"prefix": "factorization",
+		"body": [
+			"def factorization(n):",
+			"\tarr, temp = [], n",
+			"\tfor i in range(2, int(-(-n**0.5//1))+1):",
+			"\t\tif temp%i==0:",
+			"\t\t\tcnt=0",
+			"\t\t\twhile temp%i==0:",
+			"\t\t\t\tcnt+=1",
+			"\t\t\t\ttemp //= i",
+			"\t\t\tarr.append([i, cnt])",
+			"\tif temp!=1:",
+			"\t\tarr.append([temp, 1])",
+			"\tif arr==[]:",
+			"\t\tarr.append([n, 1])",
+			"\treturn arr"
+		],
+		"description": "素因数分解"
+	}
 }
