@@ -94,5 +94,15 @@
 			"\treturn arr"
 		],
 		"description": "素因数分解"
+	},
+
+	"KIRIAGE_KIRISUTE": {
+		"prefix": "kiriage_kirisute",
+		"body": [
+			"from math import ceil, floor",
+			"#ceil()  # 切り上げ。常にup",
+			"#floor()  # 切り捨て。常にdown",
+			"#int()  # 常に0に近く（正負で挙動違う）"
+		]
 	}
 }
