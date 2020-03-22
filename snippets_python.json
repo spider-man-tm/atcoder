@@ -105,5 +105,19 @@
 			"#int()  # 常に0に近く（正負で挙動違う）",
 			"#round(f),  round(f, 1)  # 四捨五入（第二引数で小数点桁数を指定）"  
 		]
+	},
+
+	"KAIBUN": {
+		"prefix": "kaibun",
+		"body": [
+			"def kaibun(s):",
+			"\tn_iter = len(s)//2",
+			"\tans = True",
+			"\tfor i in range(n_iter):",
+			"\t\tif s[i] != s[-1-i]:",
+			"\t\t\tans = False",
+			"\t\t\tbreak",
+			"\treturn ans"
+		]
 	}
 }
