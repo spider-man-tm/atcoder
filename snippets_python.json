@@ -1,38 +1,34 @@
 {
-	"NGCD": {
-		"prefix": "ngcd",
+	"GCD": {
+		"prefix": "gcd",
 		"body":[
-			"def gcd(l):",
-			"\timport fractions",
-			"\tans = l[0]",
-			"\tfor i in range(1, len(l)):",
-			"\t\tans = fractions.gcd(ans, l[i])",
-			"\treturn ans"
+			"import fractions",
+			"from functools import reduce",
+			"",
+			"def gcd(*numbers):",
+			"\treturn reduce(fractions.gcd, numbers)",
+			"",
+			"def gcd_list(numbers):",
+			"\treturn reduce(fractions.gcd, numbers)"
 		],
-		"description": "n個の数の最大公約数を求める"
+		"description": "最大公約数を求める"
 	},
 
 	"LCM": {
 		"prefix": "lcm",
 		"body": [
+			"from fractions import gcd",
+			"",
 			"def lcm(m, n):",
-			"\tfrom fractions import gcd",
-			"\treturn (m * n) // gcd(m, n)"
-		],
-		"description": "2数の最小公倍数を求める"
-	},
-
-	"NLCM": {
-		"prefix": "nlcm",
-		"body": [
-			"def lcm(a):",
-			"\tfrom fractions import gcd",
+			"\treturn (m * n) // gcd(m, n)",
+			"",
+			"def lcm_list(a):",
 			"\tx = a[0]",
 			"\tfor i in range(1, len(a)):",
 			"\t\tx = (x * a[i]) // gcd(x, a[i])",
 			"\treturn x"
 		],
-		"description": "n個の数の最小公倍数を求める"
+		"description": "最小公倍数を求める"
 	},
 
 	"IS_PRIME": {
