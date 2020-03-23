@@ -104,7 +104,8 @@
 			"#floor()  # 切り捨て。常にdown",
 			"#int()  # 常に0に近く（正負で挙動違う）",
 			"#round(f),  round(f, 1)  # 四捨五入（第二引数で小数点桁数を指定）"  
-		]
+		],
+		"description": "切り上げや切り捨て"
 	},
 
 	"KAIBUN": {
@@ -118,6 +119,7 @@
 			"\t\t\tans = False",
 			"\t\t\tbreak",
 			"\treturn ans"
-		]
+		],
+		"description": "文字の回文判定"
 	}
 }
