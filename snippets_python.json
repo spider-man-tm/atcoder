@@ -121,5 +121,18 @@
 			"\treturn ans"
 		],
 		"description": "文字の回文判定"
+	},
+
+	"ITERTOOLS": {
+		"prefix": "itertools",
+		"body": [
+			"from itertools import (",
+			"\taccumulate,  # 累積和のイテレータ",
+			"\tgroupby,  # 値をkey,同じ値の集まりをgroup",
+			"\tpermutations,  # 順列",
+			"\tcombinations,  # 組み合わせ",
+			"\tproduct,  # 重複あり順列（直積）",
+			")"
+		]
 	}
 }
