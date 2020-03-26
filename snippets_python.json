@@ -131,7 +131,7 @@
 			"\tgroupby,  # 値をkey,同じ値の集まりをgroup",
 			"\tpermutations,  # 順列",
 			"\tcombinations,  # 組み合わせ",
-			"\tproduct,  # 重複あり順列（直積）",
+			"\tproduct,  # 重複あり順列（直積, 深いネストにも使える）",
 			")"
 		]
 	}
