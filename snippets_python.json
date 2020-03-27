@@ -134,5 +134,15 @@
 			"\tproduct,  # 重複あり順列（直積, 深いネストにも使える）",
 			")"
 		]
+	},
+
+	"COUNTER": {
+		"prefix": "counter",
+		"body": [
+			"from collections import Counter",
+			"#l = ['a', 'a', 'a', 'a', 'b', 'c', 'c']",
+			"#c = Counter(l)",
+			"#print(c)   # Counter({'a': 4, 'c': 2, 'b': 1})"
+		]
 	}
 }
