@@ -133,7 +133,8 @@
 			"\tcombinations,  # 組み合わせ",
 			"\tproduct,  # 重複あり順列（直積, 深いネストにも使える）",
 			")"
-		]
+		],
+		"description": "itertoolsの各モジュール"
 	},
 
 	"COUNTER": {
@@ -143,6 +144,26 @@
 			"#l = ['a', 'a', 'a', 'a', 'b', 'c', 'c']",
 			"#c = Counter(l)",
 			"#print(c)   # Counter({'a': 4, 'c': 2, 'b': 1})"
-		]
+		],
+		"description": "リストの各要素をカウントする"
+	},
+
+	"DEQUE": {
+		"prefix": "deque",
+		"body": [
+			"from collections import deque",
+			"#S = deque(['x', 'y'])",
+			"#print(S)   ->   deque(['x', 'y'])"
+		],
+		"description": "キュー"
+	},
+
+	"FACTORIAL": {
+		"prefix": "factorial",
+		"body": [
+			"from math import factorial    #階乗計算",
+			"#print(math.factorial(5))   ->   120"
+		],
+		"description": "階乗計算"
 	}
 }
