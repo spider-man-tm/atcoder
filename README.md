@@ -1,10 +1,14 @@
-# AtCoder
+# Directory
+## AtCoder
 - AC Source code.
 - This source code is written by Python or C++.
 
+## AOJ
+- AC Source code of Aizu Online Judge.
+
 <br>
 
-# Algorithmや手法
+# データ構造・アルゴリズム、テクニック
 - ダイクストラ法
     - ABC_016_03
 - 再帰関数
