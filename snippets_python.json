@@ -173,5 +173,49 @@
 			"from bisect import bisect_left, bisect_right  # return index"
 		],
 		"description": "二分探索"
+	},
+
+	"COMBINATIONS": {
+		"prefix": "combinations",
+		"body": [
+			"def cmb(n, r, MOD=1):",
+			"\t'''",
+			"\tnCrを求める",
+			"\tMODはデフォルトで1",
+			"\t'''",
+			"\tnumerator = 1",
+			"\tdenominator = 1",
+			"\tfor l in range(r):",
+			"\t\tnumerator *= (n - l)",
+			"\t\tnumerator %= MOD",
+			"\t\tdenominator *= (l + 1)",
+			"\t\tdenominator %= MOD",
+			"\tinv = pow(denominator ,MOD - 2 ,MOD)",
+			"\treturn (numerator * inv) % MOD"
+		],
+		"description": "(nCr) 組み合わせの数を返す"
+	},
+
+	"BFS": {
+		"prefix": "bfs",
+		"body": [
+			"def bfs(sy, sx, gy, gx, c, visited):",
+			"\t'''",
+			"\tc: 与えられた経路",
+			"\tvisited: 見つかった距離、及び未探索フラグ",
+			"\t'''",
+			"\tvisited[sy][sx] = 0",
+			"\tQ = deque([])",
+			"\twhile Q:",
+			"\t\ty,x = Q.popleft()",
+			"\t\tif [y, x] == [gy, gx]:",
+			"\t\t\treturn visited[y][x]",
+			"\t\tfor i, j in [(0, 1), (1, 0), (-1, 0), (0, -1)]:",
+			"\t\t\tif c[y+i][x+j] == '.' and visited[y+i][x+j] == -1:",
+			"\t\t\t\t# 探索可能かつ未探索の場合",
+			"\t\t\t\tvisited[y+i][x+j] = visited[y][x]+1",
+			"\t\t\t\tQ.append([y+i,x+j])"
+		],
+		"description": "幅優先探索"
 	}
 }
