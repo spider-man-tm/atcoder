@@ -21,6 +21,12 @@ ABC_146_03, ABC_143_04
 ## DP（動的計画法）
 ARC_029_01, ABC_129_03
 
+## 貪欲法
+ABC_024_03
+
+## 累計和
+Tenka1_Programmer_Beginner_Contest_2019_03, 
+
 <br>
 
 # Remarks
