@@ -14,49 +14,6 @@ inf = 10**17
 mod = 10**9 + 7
 
 
-# 深いネストをスマートに書く
-import itertools as itr
-a = ['a','b','c']
-b = ['5','6','7']
-c = ['d','e','f']
-d = ['1','2','3']
-
-for w,x,y,z in itr.product(a,b,c,d):
-    print(w,x,y,z)
-
-
-
-# 最大公約数（ユークリッドの互除法）
-import fractions
-from functools import reduce
-
-def gcd(*numbers):
-    return reduce(fractions.gcd, numbers)
-
-def gcd_list(numbers):
-    return reduce(fractions.gcd, numbers)
-
-
-
-# 複数のリストを同時にソートする
-_list = [[3, 'agr', 'あ'], [0, 'bde', 'い'], [3, 'rfb', 'う']]
-_list = sorted(_list, key=lambda x: (-x[0], x[2]))
-print(_list)
-"""
-[[3, 'agr', 'あ'], [3, 'rfb', 'う'], [0, 'bde', 'い']]
-#一優先キーが先頭の数字(降順)。第二優先キーが平仮名
-"""
-
-
-
-# listの要素を数える
-import collections
-
-l = ['a', 'a', 'a', 'a', 'b', 'c', 'c']
-c = collections.Counter(l)
-print(c)   # Counter({'a': 4, 'c': 2, 'b': 1})
-
-
 
 # 辞書の最大値を取ってくる
 max_kv_list = [kv for kv in d.items() if kv[1] == max(d.values())]
@@ -73,25 +30,50 @@ print(max_k_list)
 d = {chr(i): 50 for i in range(97, 97+26)}
 
 
+# Union Find
+class UnionFind():
+    def __init__(self, n):
+        self.n = n
+        self.parents = [-1] * n
 
-# 組み合わせとか順列の列挙
-# https://note.nkmk.me/python-math-factorial-permutations-combinations/
-# (以下、よく使う例)
-l = ['a', 'b', 'c', 'd']
-c = itertools.combinations(l, 2)
-print(type(c))
-# <class 'itertools.combinations'>
-for v in itertools.combinations(l, 2):
-    print(v)
-# ('a', 'b')
-# ('a', 'c')
-# ('a', 'd')
-# ('b', 'c')
-# ('b', 'd')
-# ('c', 'd')
+    def find(self, x):
+        if self.parents[x] < 0:
+            return x
+        else:
+            self.parents[x] = self.find(self.parents[x])
+            return self.parents[x]
 
-# 組み合わせの総数を出す
-def combinations_count(n, r):
-    return math.factorial(n) // (math.factorial(n - r) * math.factorial(r))
-print(combinations_count(4, 2))
-# 6
+    def union(self, x, y):
+        x = self.find(x)
+        y = self.find(y)
+
+        if x == y:
+            return
+
+        if self.parents[x] > self.parents[y]:
+            x, y = y, x
+
+        self.parents[x] += self.parents[y]
+        self.parents[y] = x
+
+    def size(self, x):
+        return -self.parents[self.find(x)]
+
+    def same(self, x, y):
+        return self.find(x) == self.find(y)
+
+    def members(self, x):
+        root = self.find(x)
+        return [i for i in range(self.n) if self.find(i) == root]
+
+    def roots(self):
+        return [i for i, x in enumerate(self.parents) if x < 0]
+
+    def group_count(self):
+        return len(self.roots())
+
+    def all_group_members(self):
+        return {r: self.members(r) for r in self.roots()}
+
+    def __str__(self):
+        return '\n'.join('{}: {}'.format(r, self.members(r)) for r in self.roots())
