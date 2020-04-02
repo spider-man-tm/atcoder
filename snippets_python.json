@@ -153,7 +153,9 @@
 		"body": [
 			"from collections import deque",
 			"#S = deque(['x', 'y'])",
-			"#print(S)   ->   deque(['x', 'y'])"
+			"#print(S)   ->   deque(['x', 'y'])",
+			"#popleft  ->  キュー",
+			"#pop  ->  スタック"
 		],
 		"description": "キュー"
 	},
