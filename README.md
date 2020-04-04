@@ -25,7 +25,7 @@ Name: Competitive programming
 |  ワーシャルフロイド  |    |
 |  クラスカル法  |    |
 |  再帰関数  |  ABC_026_03, ABC_115_04  |
-|  貪欲法  |  ABC_024_03  |
+|  貪欲法  |  ABC_024_03, ABC_161_05  |
 |  累積和  |  Tenka1_Programmer_Beginner_Contest_2019_03, ABC_122_03  |
 
 <br>
@@ -39,6 +39,7 @@ Name: Competitive programming
 |  木  |    |
 |  グラフ  |    |
 |  優先度付きキュー  |  ABC_141_004  |
+|　キュー　|　ABC_161_04　|
 
 <br>
 <br>
