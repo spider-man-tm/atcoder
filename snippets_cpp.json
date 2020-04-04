@@ -1,0 +1,10 @@
+{
+	"INCLUDE": {
+		"prefix": "#include <bits/stdc++.h>",
+		"body": [
+            "#include <bits/stdc++.h>",
+            "using namespace std;"
+		],
+		"description": "標準ライブラリのインクルード"
+	}
+}
