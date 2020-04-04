@@ -219,5 +219,19 @@
 			"\t\t\t\tQ.append([y+i,x+j])"
 		],
 		"description": "幅優先探索"
+	},
+
+	"HEAPQ": {
+		"prefix": "heapq",
+		"body": [
+			"from heapq import (",
+			"\theapify,  # 優先度付きキューの生成",
+			"\theappop,",
+			"\theappush,",
+			"\theappushpop,",
+			"\theapreplace",
+			"\t)"
+		],
+		"description": "優先度付きキュー"
 	}
 }

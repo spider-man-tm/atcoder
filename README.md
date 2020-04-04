@@ -39,7 +39,7 @@ ABC_026_03, ABC_115_04
 ABC_024_03
 
 ### 累積和
-Tenka1_Programmer_Beginner_Contest_2019_03
+Tenka1_Programmer_Beginner_Contest_2019_03, ABC_122_03
 
 ## データ構造
 ### Union-Find
@@ -48,6 +48,9 @@ ABC_157_04
 ### 木
 
 ### グラフ
+
+### 優先度付きキュー
+ABC_141_004
 
 <br>
 
