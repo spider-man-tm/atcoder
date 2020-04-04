@@ -10,48 +10,38 @@ Name: Competitive programming
 - AC Source code of Aizu Online Judge.
 
 <br>
+<br>
 
 ## アルゴリズム, テクニック
-### 二分探索
-ABC_146_03, ABC_143_04
 
-### DFS（深さ優先探索）
+|  Name  |  Problem No  |
+| ---- | ---- |
+|  二分探索  |  ABC_146_03, ABC_143_04  |
+|  DFS（深さ優先探索）  |  ABC_007_03  |
+|  BFS（幅優先探索）  |    |
+|  [bit全探索](https://qiita.com/gogotealove/items/11f9e83218926211083a)  |  ABC_147_04  |
+|  DP（動的計画法）  |  ARC_029_01, ABC_129_03, AGC_043_01  |
+|  ダイクストラ  |  ABC_016_03  |
+|  ワーシャルフロイド  |    |
+|  クラスカル法  |    |
+|  再帰関数  |  ABC_026_03, ABC_115_04  |
+|  貪欲法  |  ABC_024_03  |
+|  累積和  |  Tenka1_Programmer_Beginner_Contest_2019_03, ABC_122_03  |
 
-### BFS（幅優先探索）
-
-### [bit全探索](https://qiita.com/gogotealove/items/11f9e83218926211083a)
-ABC_147_04
-
-### DP（動的計画法）
-ARC_029_01, ABC_129_03, AGC_043_01
-
-### ダイクストラ
-ABC_016_03
-
-### ワーシャルフロイド
-
-### クラスカル法
-
-### 再帰関数
-ABC_026_03, ABC_115_04
-
-### 貪欲法
-ABC_024_03
-
-### 累積和
-Tenka1_Programmer_Beginner_Contest_2019_03, ABC_122_03
+<br>
+<br>
 
 ## データ構造
-### Union-Find
-ABC_157_04
 
-### 木
+|  Name  |  Problem No  |
+| ---- | ---- |
+|  Union-Find  |  ABC_157_04  |
+|  木  |    |
+|  グラフ  |    |
+|  優先度付きキュー  |  ABC_141_004  |
 
-### グラフ
-
-### 優先度付きキュー
-ABC_141_004
-
+<br>
+<br>
 <br>
 
 # Remarks
