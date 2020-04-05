@@ -19,7 +19,7 @@ Name: Competitive programming
 |  二分探索  |  ABC_146_03, ABC_143_04  |
 |  DFS（深さ優先探索）  |  ABC_007_03  |
 |  BFS（幅優先探索）  |    |
-|  [bit全探索](https://qiita.com/gogotealove/items/11f9e83218926211083a)  |  ABC_147_04  |
+|  [bit全探索](https://qiita.com/gogotealove/items/11f9e83218926211083a)  |  ABC_147_04, 1stアルゴリズム実技検定_G  |
 |  DP（動的計画法）  |  ARC_029_01, ABC_129_03, AGC_043_01  |
 |  ダイクストラ  |  ABC_016_03  |
 |  ワーシャルフロイド  |    |
@@ -39,7 +39,7 @@ Name: Competitive programming
 |  木  |    |
 |  グラフ  |    |
 |  優先度付きキュー  |  ABC_141_004  |
-|　キュー　|　ABC_161_04　|
+|  キュー  |  ABC_161_04  |
 
 <br>
 <br>

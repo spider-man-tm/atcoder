@@ -172,7 +172,14 @@
 	"BISECT": {
 		"prefix": "bisect",
 		"body": [
-			"from bisect import bisect_left, bisect_right  # return index"
+			"from bisect import bisect_left, bisect_right  # return index",
+			"",
+			"def search(t, i):",
+			"'''存在するかどうかを返す'''",
+			"\tix = bisect_right(t, i)",
+			"\tif t[ix-1] != i:",
+			"\t\treturn False",
+			"\treturn True"
 		],
 		"description": "二分探索"
 	},
