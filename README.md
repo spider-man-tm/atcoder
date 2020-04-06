@@ -16,17 +16,17 @@ Name: Competitive programming
 
 |  Name  |  Problem No  |
 | ---- | ---- |
-|  二分探索  |  ABC_146_03, ABC_143_04  |
-|  DFS（深さ優先探索）  |  ABC_007_03  |
+|  二分探索  |  ABC_146_C, ABC_143_D  |
+|  DFS（深さ優先探索）  |  ABC_007_C  |
 |  BFS（幅優先探索）  |    |
-|  [bit全探索](https://qiita.com/gogotealove/items/11f9e83218926211083a)  |  ABC_147_04, 1stアルゴリズム実技検定_G  |
-|  DP（動的計画法）  |  ARC_029_01, ABC_129_03, AGC_043_01  |
-|  ダイクストラ  |  ABC_016_03  |
+|  [bit全探索](https://qiita.com/gogotealove/items/11f9e83218926211083a)  |  ABC_147_D, 1stアルゴリズム実技検定_G  |
+|  DP（動的計画法）  |  ARC_029_A, ABC_129_C, AGC_043_01  |
+|  ダイクストラ  |  ABC_016_C  |
 |  ワーシャルフロイド  |    |
 |  クラスカル法  |    |
-|  再帰関数  |  ABC_026_03, ABC_115_04  |
-|  貪欲法  |  ABC_024_03, ABC_161_05  |
-|  累積和  |  Tenka1_Programmer_Beginner_Contest_2019_03, ABC_122_03  |
+|  再帰関数  |  ABC_026_C, ABC_115_D  |
+|  貪欲法  |  ABC_024_C, ABC_161_E  |
+|  累積和  |  Tenka1_Programmer_Beginner_Contest_2019_C, ABC_122_C  |
 
 <br>
 <br>
@@ -35,11 +35,11 @@ Name: Competitive programming
 
 |  Name  |  Problem No  |
 | ---- | ---- |
-|  Union-Find  |  ABC_157_04  |
+|  Union-Find  |  ABC_157_D  |
 |  木  |    |
 |  グラフ  |    |
-|  優先度付きキュー  |  ABC_141_004  |
-|  キュー  |  ABC_161_04  |
+|  優先度付きキュー  |  ABC_141_D  |
+|  キュー  |  ABC_161_D  |
 
 <br>
 <br>
