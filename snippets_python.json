@@ -175,7 +175,7 @@
 			"from bisect import bisect_left, bisect_right  # return index",
 			"",
 			"def search(t, i):",
-			"'''存在するかどうかを返す'''",
+			"\t'''存在するかどうかを返す'''",
 			"\tix = bisect_right(t, i)",
 			"\tif t[ix-1] != i:",
 			"\t\treturn False",
@@ -240,5 +240,17 @@
 			"\t)"
 		],
 		"description": "優先度付きキュー"
+	},
+
+	"BIT_ALL_SEARCH": {
+		"prefix": "bit",
+		"body": [
+			"for i in range(1<<N):",
+			"\tcond = [0]*N",
+			"\tfor j in range(N):",
+			"\t\tif 1&(i>>j):  # 右シフトして論理積（bit全探索）",
+			"\t\t\tcond[j] = 1"
+		],
+		"description": "bit全探索"
 	}
 }

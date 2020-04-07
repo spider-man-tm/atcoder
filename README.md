@@ -27,6 +27,7 @@ Name: Competitive programming
 |  再帰関数  |  ABC_026_C, ABC_115_D  |
 |  貪欲法  |  ABC_024_C, ABC_161_E  |
 |  累積和  |  Tenka1_Programmer_Beginner_Contest_2019_C, ABC_122_C  |
+|  しゃくとり法  |  ABC_038_C  |
 
 <br>
 <br>
