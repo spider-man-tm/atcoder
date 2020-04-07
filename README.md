@@ -25,7 +25,7 @@ Name: Competitive programming
 |  ワーシャルフロイド  |    |
 |  クラスカル法  |    |
 |  再帰関数  |  ABC_026_C, ABC_115_D  |
-|  貪欲法  |  ABC_024_C, ABC_161_E  |
+|  貪欲法  |  ABC_024_C, ABC_161_E, キーエンスプログラミングコンテスト2020_B  |
 |  累積和  |  Tenka1_Programmer_Beginner_Contest_2019_C, ABC_122_C  |
 |  しゃくとり法  |  ABC_038_C  |
 
