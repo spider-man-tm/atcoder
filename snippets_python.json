@@ -132,6 +132,7 @@
 			"\tpermutations,  # 順列",
 			"\tcombinations,  # 組み合わせ",
 			"\tproduct,  # 重複あり順列（直積, 深いネストにも使える）",
+			"\tcombinations_with_replacement,  # 重複あり組み合わせ",
 			")"
 		],
 		"description": "itertoolsの各モジュール"

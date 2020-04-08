@@ -1,12 +1,12 @@
 N = int(input())
 A = [0]*N
-rel = []
+relation = []
 for i in range(N):
     tmp = []
     A[i] = int(input())
     for j in range(A[i]):
         tmp.append(list(map(int, input().split())))
-    rel.append(tmp)
+    relation.append(tmp)
 
 ans = 0
 for i in range(1<<N):
@@ -15,7 +15,6 @@ for i in range(1<<N):
         if 1&(i>>j):  # 右シフトして論理積（bit全探索）
             cond[j] = 1
 
-    #print(cond)
     mujun = False
     stop_flag = False
     for j in range(N):  # 一人一人判定
@@ -26,7 +25,7 @@ for i in range(1<<N):
             for k in range(A[j]):  # jの証言を一つずつチェック
                 #print(cond[rel[j][k][0]-1])
                 #print(rel[j][k][1])
-                if cond[rel[j][k][0]-1] != rel[j][k][1]:  # jのk番目の証言をチェック
+                if cond[relation[j][k][0]-1] != relation[j][k][1]:  # jのk番目の証言をチェック
                     mujun = True
                     stop_flag = True
                     break
