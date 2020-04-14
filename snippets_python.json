@@ -2,14 +2,11 @@
 	"GCD": {
 		"prefix": "gcd",
 		"body":[
-			"import fractions",
+			"from math import gcd   # gcd(6, 4) -> 2",
 			"from functools import reduce",
 			"",
-			"def gcd(*numbers):",
-			"\treturn reduce(fractions.gcd, numbers)",
-			"",
 			"def gcd_list(numbers):",
-			"\treturn reduce(fractions.gcd, numbers)"
+			"\treturn reduce(gcd, numbers)"
 		],
 		"description": "最大公約数を求める"
 	},
