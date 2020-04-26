@@ -250,5 +250,24 @@
 			"\t\t\tcond[j] = 1"
 		],
 		"description": "bit全探索"
+	},
+
+	"DIVISORS": {
+		"prefix": "divisors",
+		"body": [
+			"def divisors(n):",
+			"\t'''約数列挙'''",
+			"\tdiv = []",
+			"\tfor i in range(1, int(n**0.5)+1):",
+			"\t\tif n % i == 0:",
+			"\t\t\tdiv.append(i)",
+			"\t\t\tif i != n // i:",
+			"\t\t\t\tdiv.append(n//i)",
+			"",
+			"\t# divisors.sort()  # ソートの必要あれば",
+			"\treturn div"
+		],
+		"description": "bit全探索"
 	}
+
 }
