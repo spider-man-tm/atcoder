@@ -32,7 +32,7 @@ Name: Competitive programming
 |  ダイクストラ  |  ABC_016 C  |
 |  ワーシャルフロイド  |    |
 |  クラスカル法  |    |
-|  再帰関数  |  ABC_026 C, ABC_115 D  |
+|  再帰関数  |  ABC_026 C, ABC_115 D, 2nd_PAST E |
 |  貪欲法  |  ABC_024 C, ABC_161 E, キーエンスプログラミングコンテスト2020 B, CODE_FESTIVAL_2016_qual_A C  |
 |  累積和  |  Tenka1_Programmer_Beginner_Contest_2019 C, ABC_122 C, ABC_163 D  |
 |  しゃくとり法  |  ABC_038 C  |

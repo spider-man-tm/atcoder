@@ -14,7 +14,7 @@
 	"LCM": {
 		"prefix": "lcm",
 		"body": [
-			"from fractions import gcd",
+			"from math import gcd",
 			"",
 			"def lcm(m, n):",
 			"\treturn (m * n) // gcd(m, n)",
