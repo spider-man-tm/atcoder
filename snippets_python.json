@@ -212,28 +212,63 @@
 		"description": "(nCr) 組み合わせの数を返す"
 	},
 
-	"BFS": {
-		"prefix": "bfs",
+	"BFS_MAZE": {
+		"prefix": "bfs_maze",
 		"body": [
-			"def bfs(sy, sx, gy, gx, c, visited):",
-			"\t'''",
-			"\tc: 与えられた経路",
-			"\tvisited: 見つかった距離、及び未探索フラグ",
-			"\t'''",
-			"\tvisited[sy][sx] = 0",
-			"\tQ = deque([])",
-			"\twhile Q:",
-			"\t\ty,x = Q.popleft()",
-			"\t\tif [y, x] == [gy, gx]:",
-			"\t\t\treturn visited[y][x]",
-			"\t\tfor i, j in [(0, 1), (1, 0), (-1, 0), (0, -1)]:",
-			"\t\t\tif c[y+i][x+j] == '.' and visited[y+i][x+j] == -1:",
-			"\t\t\t\t# 探索可能かつ未探索の場合",
-			"\t\t\t\tvisited[y+i][x+j] = visited[y][x]+1",
-			"\t\t\t\tQ.append([y+i,x+j])"
+		  "def bfs(sy,sx,gy,gx,c,visited):",
+		  "    visited[sy][sx] = 0",
+		  "    Q = deque([])",
+		  "    Q.append([sx, sy])",
+		  "    while Q:",
+		  "        y,x = Q.popleft()",
+		  " ",
+		  "        if [y, x] == [gy, gx]:",
+		  "            return visited[y][x]",
+		  " ",
+		  "        for i, j in [(0, 1), (1, 0), (-1, 0), (0, -1)]:",
+		  "            if c[y+i][x+j] == '.' and visited[y+i][x+j] == -1:",
+		  "                # 探索可能かつ未探索の場合",
+		  "                visited[y+i][x+j] = visited[y][x]+1",
+		  "                Q.append([y+i,x+j])"
 		],
-		"description": "幅優先探索"
-	},
+		"description": "幅優先探索(迷路)"
+	  },
+
+	"BFS_TREE": {
+		"prefix": "bfs_tree",
+		"body": [
+		  "graph = [[] for _ in range(N)]",
+		  "pre = []",
+		  "",
+		  "for _ in range(M):",
+		  "    A, B = map(int, input().split())",
+		  "    graph[A-1].append(B-1)",
+		  "    graph[B-1].append(A-1)",
+		  "    ",
+		  "def bfs_tree(graph,v=1):",
+		  "    \"\"\"",
+		  "    graph: グラフ",
+		  "    v: スタート",
+		  "    \"\"\"",
+		  "    # 矢印がどこを向いているか",
+		  "    # -1だと未探索",
+		  "    arrow = [-1]*len(graph) ",
+		  "    q = deque()",
+		  "    q.append(v)",
+		  "    arrow[v] = 0",
+		  "    while q:",
+		  " ",
+		  "        now = q.popleft()",
+		  "        for next_v in graph[now]:",
+		  "            if arrow[next_v] != -1:",
+		  "                continue",
+		  "            else:",
+		  "                q.append(next_v)",
+		  "                arrow[next_v] = now",
+		  "    return arrow"
+		],
+		"description": "幅優先探索(木)"
+	  }
 
 	"HEAPQ": {
 		"prefix": "heapq",
