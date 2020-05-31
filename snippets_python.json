@@ -268,7 +268,7 @@
 		  "    return arrow"
 		],
 		"description": "幅優先探索(木)"
-	  }
+	  },
 
 	"HEAPQ": {
 		"prefix": "heapq",
@@ -334,7 +334,7 @@
 	},
 
 	"binrary_tree": {
-		"prefix": "binrary_tree",
+		"prefix": "binary_tree",
 		"body": [
 		  "import random #入力整数列Aの生成に使用",
 		  "",
@@ -576,5 +576,23 @@
 		  "    return abs(a*x + b*y + c) / ((a**2 + b**2) ** 0.5)"
 		],
 		"description": "点と直線関係"
+	  },
+
+	  "BFS": {
+		"prefix": "bfs",
+		"body": [
+		  "from collections import deque",
+		  "",
+		  "# 深さ優先探索ではスタックを使用",
+		  "# 一番最後に積み重なったものから探索=深さ優先",
+		  "data = deque([0])",
+		  "",
+		  "while len(data) > 0:",
+		  "    pos = data.pop()",
+		  "    print(pos, end=' ')",
+		  "    for i in tree[pos]:",
+		  "        data.append(i)"
+		],
+		"description": "深さ優先探索（not再帰）"
 	  }
 }
