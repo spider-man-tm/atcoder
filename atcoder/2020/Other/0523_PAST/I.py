@@ -1,34 +1,29 @@
 N = int(input())
+rows = [i for i in range(N)]
+columns = [i for i in range(N)]
+transposed = False
+
 Q = int(input())
-
-row = list(range(N))
-col = list(range(N))
-
-flag = True
-
 for _ in range(Q):
-    query = input().split()
-    if query[0]=='1':
-        a, b = int(query[1])-1, int(query[2])-1
-        if flag:
-            row[a] = b
-            row[b] = a
-        else:
-            col[a] = b
-            col[b] = a
-    elif query[0]=='2':
-        a, b = int(query[1])-1, int(query[2])-1
-        if flag:
-            col[a] = b
-            col[b] = a
-        else:
-            row[a] = b
-            row[b] = a
-    elif query[0]=='3':
-        flag = not flag
-    else:
-        a, b = int(query[1])-1, int(query[2])-1
-        p_r = row[a]
-        p_c = col[b]
+    q = list(map(int,input().split()))
 
-        print(N*(p_r)+p_c)
+    if q[0] == 3:
+        transposed = not transposed
+    else:
+        A, B = q[1]-1, q[2]-1
+        if q[0] == 1:
+            if transposed:
+                columns[A], columns[B] = columns[B], columns[A]
+            else:
+                rows[A], rows[B] = rows[B], rows[A]
+        elif q[0] == 2:
+            if transposed:
+                rows[A], rows[B] = rows[B], rows[A]
+            else:
+                columns[A], columns[B] = columns[B], columns[A]
+        elif q[0] == 4:
+            if transposed:
+                A, B = B, A
+            r,c = rows[A], columns[B]
+
+            print(N*r+c)

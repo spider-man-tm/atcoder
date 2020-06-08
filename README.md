@@ -47,7 +47,7 @@ Name: Competitive programming
 
 |  Name  |  Problem No  |
 | ---- | ---- |
-|  Union-Find  |  ABC_157 D  |
+|  Union-Find  |  ABC_157 D, ARC_032_B  |
 |  木  |    |
 |  グラフ  |    |
 |  優先度付きキュー  |  ABC_141 D  |
