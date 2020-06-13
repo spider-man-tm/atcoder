@@ -543,9 +543,9 @@
 		  "    return d #d[i][j]に頂点i, j間の最短距離を格納"
 		],
 		"description": "ワーシャルフロイド法"
-	  },
+	},
 
-	  "": {
+	"POINT_LINE_DIFF": {
 		"prefix": "point_line",
 		"body": [
 		  "def get_line_formula(x1, y1, x2, y2):",
@@ -576,9 +576,9 @@
 		  "    return abs(a*x + b*y + c) / ((a**2 + b**2) ** 0.5)"
 		],
 		"description": "点と直線関係"
-	  },
+	},
 
-	  "BFS": {
+	"BFS": {
 		"prefix": "bfs",
 		"body": [
 		  "from collections import deque",
@@ -594,5 +594,42 @@
 		  "        data.append(i)"
 		],
 		"description": "深さ優先探索（not再帰）"
-	  }
+	},
+
+	"CHECK_PERFECT": {
+		"prefix": "check_perfect",
+		"body": [
+		  "def check_perfect(n):",
+		  "    n_sqrt = int(n**0.5)",
+		  "    total = 1",
+		  "    for i in range(2, n_sqrt+1):",
+		  "        if n%i == 0:",
+		  "            total += i",
+		  "            total += n//i",
+		  "    ",
+		  "    if n_sqrt**2 == n:",
+		  "        total -= n_sqrt",
+		  "",
+		  "    if total == n:",
+		  "        return 'Perfect'",
+		  "    elif total < n:",
+		  "        return 'Deficient'",
+		  "    else:",
+		  "        return 'Abundant'"
+		],
+		"description": "完全数の判定"
+	},
+
+	"PATTERN_MATCH": {
+		"prefix": "pattern_match",
+		"body": [
+		  "import re",
+		  "",
+		  "def pattern_match(s):",
+		  "    # .*は任意の文字列",
+		  "    pattern = re.compile('.*okyo.*ech.*')",
+		  "    return re.search(pattern, s)"
+		],
+		"description": "任意の文字列含むか判定"
+	}
 }
