@@ -15,8 +15,8 @@ ans = [0]*N
 
 def dfs(u, parent=None):
     """
-    u: ノード
-    parent: 根
+    u: 子ノード
+    parent: 親ノード
     """
     ans[u] = ans[parent] + X[u]
     for v in tree[u]:

@@ -39,6 +39,7 @@ Name: Competitive programming
 |  貪欲法  |  ABC_024 C, ABC_161 E, キーエンスプログラミングコンテスト2020 B, CODE_FESTIVAL_2016_qual_A C  |
 |  累積和  |  Tenka1_Programmer_Beginner_Contest_2019 C, ABC_122 C, ABC_163 D  |
 |  しゃくとり法  |  ABC_038 C  |
+|  いもす法  |  東京海上日動プログラミングコンテスト2020 C  |
 
 <br>
 <br>
