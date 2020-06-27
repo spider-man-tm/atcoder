@@ -29,7 +29,7 @@ Name: Competitive programming
 | ---- | ---- |
 |  二分探索  |  ABC_146 C, ABC_143 D, ABC_036 C  |
 |  DFS（深さ優先探索）  |  ABC_138 D  |
-|  BFS（幅優先探索）  |  ABC_007 C, ABC_168 D, ARC_031 B |
+|  BFS（幅優先探索）  |  ABC_007 C, ABC_168 D, ARC_031 B, ABC_146 D |
 |  [bit全探索](https://qiita.com/gogotealove/items/11f9e83218926211083a)  |  ABC_147 D, 1stアルゴリズム実技検定 G, ABC_002 C, ABC_128 C, ARC_061_A, ABC_167_C  |
 |  DP（動的計画法）  |  ARC_029 A, ABC_129 C, AGC_043 A  |
 |  ダイクストラ  |  ABC_016 C  |
@@ -38,7 +38,7 @@ Name: Competitive programming
 |  再帰関数  |  ABC_026 C, ABC_115 D, 2nd_PAST E |
 |  貪欲法  |  ABC_024 C, ABC_161 E, キーエンスプログラミングコンテスト2020 B, CODE_FESTIVAL_2016_qual_A C  |
 |  累積和  |  Tenka1_Programmer_Beginner_Contest_2019 C, ABC_122 C, ABC_163 D  |
-|  しゃくとり法  |  ABC_038 C  |
+|  しゃくとり法  |  ABC_038 C, ABC_130 D  |
 |  いもす法  |  東京海上日動プログラミングコンテスト2020 C  |
 
 <br>
