@@ -27,10 +27,10 @@ Name: Competitive programming
 
 |  Name  |  Problem No  |
 | ---- | ---- |
-|  二分探索  |  ABC_146 C, ABC_143 D, ABC_036 C  |
+|  二分探索  |  ABC_146 C, ABC_143 D, ABC_036 C, ABC_077 C |
 |  DFS（深さ優先探索）  |  ABC_138 D  |
 |  BFS（幅優先探索）  |  ABC_007 C, ABC_168 D, ARC_031 B, ABC_146 D |
-|  [bit全探索](https://qiita.com/gogotealove/items/11f9e83218926211083a)  |  ABC_147 D, 1stアルゴリズム実技検定 G, ABC_002 C, ABC_128 C, ARC_061_A, ABC_167_C  |
+|  [bit全探索](https://qiita.com/gogotealove/items/11f9e83218926211083a)  |  ABC_147 D, 1stPAST G, ABC_002 C, ABC_128 C, ARC_061_A, ABC_167_C  |
 |  DP（動的計画法）  |  ARC_029 A, ABC_129 C, AGC_043 A  |
 |  ダイクストラ  |  ABC_016 C  |
 |  ワーシャルフロイド  |    |
@@ -48,10 +48,10 @@ Name: Competitive programming
 
 |  Name  |  Problem No  |
 | ---- | ---- |
-|  Union-Find  |  ABC_157 D, ARC_032_B  |
+|  Union-Find  |  ABC_157 D, ARC_032 B, ABC_075 C  |
 |  木  |    |
 |  グラフ  |    |
-|  優先度付きキュー  |  ABC_141 D  |
+|  優先度付きキュー  |  ABC_141 D, 2ndPAST F |
 |  キュー  |  ABC_161 D  |
 
 <br>
@@ -59,4 +59,6 @@ Name: Competitive programming
 <br>
 
 ## Remarks
-- ある整数 $x$ が、素因数分解によって $x=p^n×q^m× \cdots (p, q, \cdots $は素数)$ と表せる時、$x$ の約数の個数は $(n + 1) × (m + 1) × \cdots $ となる。（素数を使わない時もあるので、$+1$）
+- ある整数 $x$ が、素因数分解によって $x=p^n×q^m× \cdots (p, q, \cdots $は素数)$ と表せる時、$x$ の約数の個数は $(n + 1) × (m + 1) × \cdots $ となる。（素数を使わない時もあるので、+1）
+
+- A, Bの公約数 = GCD(A, B)の約数

@@ -631,5 +631,38 @@
 		  "    return re.search(pattern, s)"
 		],
 		"description": "任意の文字列含むか判定"
+	},
+
+	"MAKE_DIVISORS": {
+		"prefix": "yakusu_rekkyo",
+		"body": [
+		  "from math import gcd",
+		  "",
+		  "",
+		  "def make_divisors(n):",
+		  "    \"\"\"",
+		  "    約数の高速列挙",
+		  "    \"\"\"",
+		  "    lower_divisors , upper_divisors = [], []",
+		  "    i = 1",
+		  "    while i*i <= n:",
+		  "        if n % i == 0:",
+		  "            lower_divisors.append(i)",
+		  "            if i != n // i:",
+		  "                upper_divisors.append(n//i)",
+		  "        i += 1",
+		  "    return lower_divisors + upper_divisors[::-1]",
+		  "",
+		  "",
+		  "def common_divisors(a, b):",
+		  "    \"\"\"",
+		  "    公約数の高速列挙",
+		  "    A, Bの公約数 = GCD(A, B)の約数",
+		  "    \"\"\"",
+		  "    n_gcd = gcd(a, b)",
+		  "    return make_divisors(n_gcd)"
+		],
+		"description": "約数・公約数の列挙"
 	}
+
 }
