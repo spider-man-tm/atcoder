@@ -33,7 +33,7 @@ Name: Competitive programming
 |  [bit全探索](https://qiita.com/gogotealove/items/11f9e83218926211083a)  |  ABC_147 D, 1stPAST G, ABC_002 C, ABC_128 C, ARC_061_A, ABC_167_C  |
 |  DP（動的計画法）  |  ARC_029 A, ABC_129 C, AGC_043 A  |
 |  ダイクストラ  |  ABC_016 C  |
-|  ワーシャルフロイド  |    |
+|  ワーシャルフロイド  |  ABC_012 D  |
 |  クラスカル法  |    |
 |  再帰関数  |  ABC_026 C, ABC_115 D, 2nd_PAST E |
 |  貪欲法  |  ABC_024 C, ABC_161 E, キーエンスプログラミングコンテスト2020 B, CODE_FESTIVAL_2016_qual_A C  |
