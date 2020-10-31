@@ -60,5 +60,5 @@ Name: Competitive programming
 
 ## Remarks
 - ある整数 $x$ が、素因数分解によって $x=p^n×q^m× \cdots (p, q, \cdots $は素数)$ と表せる時、$x$ の約数の個数は $(n + 1) × (m + 1) × \cdots $ となる。（素数を使わない時もあるので、+1）
-
 - A, Bの公約数 = GCD(A, B)の約数
+- [NIMについて](https://nanikaka.hatenadiary.org/entry/20120524/1337797626)
