@@ -62,3 +62,7 @@ Name: Competitive programming
 - ある整数 $x$ が、素因数分解によって $x=p^n×q^m× \cdots (p, q, \cdots $は素数)$ と表せる時、$x$ の約数の個数は $(n + 1) × (m + 1) × \cdots $ となる。（素数を使わない時もあるので、+1）
 - A, Bの公約数 = GCD(A, B)の約数
 - [NIMについて](https://nanikaka.hatenadiary.org/entry/20120524/1337797626)
+- 8の倍数 -> 8の倍数下3桁が8の倍数であれば、どんなに大きい数であっても、8の倍数
+- [2~13の倍数の色々な判定法まとめ](https://manabi.matiralab.com/times2-13/)
+- [Pythonの辞書型の様々なソート方法](https://techacademy.jp/magazine/19309)
+- PythonのCounter、クラスにはmost_common()というメソッドがあります。これは(要素, 出現回数)というタプルを出現回数順に並べたリストを返します。

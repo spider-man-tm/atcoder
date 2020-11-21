@@ -1,5 +1,5 @@
 {
-	"GCD": {
+	"最大公約数を求める": {
 		"prefix": "gcd",
 		"body":[
 			"from math import gcd   # gcd(6, 4) -> 2",
@@ -11,7 +11,7 @@
 		"description": "最大公約数を求める"
 	},
 
-	"LCM": {
+	"最小公倍数を求める": {
 		"prefix": "lcm",
 		"body": [
 			"from math import gcd",
@@ -28,7 +28,7 @@
 		"description": "最小公倍数を求める"
 	},
 
-	"IS_PRIME": {
+	"素数判定": {
 		"prefix": "is_prime",
 		"body": [
 			"def is_prime(n):",
@@ -42,7 +42,7 @@
 		"description": "素数判定"
 	},
 
-	"DIGSUM": {
+	"桁和": {
 		"prefix": "digsum",
 		"body": [
 			"def digsum(n):",
@@ -56,7 +56,7 @@
 		"description": "桁和"
 	},
 
-	"LIST_INPUT": {
+	"listの標準入力": {
 		"prefix": "list(map(int, input().split()))",
 		"body": [
 			"list(map(int, input().split()))"
@@ -64,7 +64,7 @@
 		"description": "listの標準入力"
 	},
 
-	"NUMER_INPUT": {
+	"numberの標準入力": {
 		"prefix": "map(int, input().split())",
 		"body": [
 			"map(int, input().split())"
@@ -72,7 +72,7 @@
 		"description": "numberの標準入力"
 	},
 
-	"STRING_INPUT": {
+	"stringをリストで標準入力": {
 		"prefix": "list(input().split())",
 		"body": [
 			"list(input().split())"
@@ -80,7 +80,7 @@
 		"description": "stringをリストで標準入力"
 	},
 
-	"FACTORIZATION": {
+	"素因数分解": {
 		"prefix": "factorization",
 		"body": [
 		  "# O(NloglogN)",
@@ -118,7 +118,7 @@
 		"description": "素因数分解"
 	},
 
-	"KIRIAGE_KIRISUTE": {
+	"切り上げや切り捨て": {
 		"prefix": "kiriage_kirisute",
 		"body": [
 			"from math import ceil, floor",
@@ -130,7 +130,7 @@
 		"description": "切り上げや切り捨て"
 	},
 
-	"KAIBUN": {
+	"文字の回文判定": {
 		"prefix": "kaibun",
 		"body": [
 			"def kaibun(s):",
@@ -145,7 +145,7 @@
 		"description": "文字の回文判定"
 	},
 
-	"ITERTOOLS": {
+	"itertoolsの各モジュール": {
 		"prefix": "itertools",
 		"body": [
 			"from itertools import (",
@@ -160,18 +160,20 @@
 		"description": "itertoolsの各モジュール"
 	},
 
-	"COUNTER": {
+	"リストの各要素をカウントする": {
 		"prefix": "counter",
 		"body": [
 			"from collections import Counter",
 			"#l = ['a', 'a', 'a', 'a', 'b', 'c', 'c']",
 			"#c = Counter(l)",
-			"#print(c)   # Counter({'a': 4, 'c': 2, 'b': 1})"
+			"#print(c)   # Counter({'c': 2, 'a': 4, 'b': 1})  順番は適当",
+			"#c = Counter(l).most_common()",
+			"#print(c)   # [('a', 4), ('c', 2), ('b', 1)]"
 		],
 		"description": "リストの各要素をカウントする"
 	},
 
-	"DEQUE": {
+	"キュー": {
 		"prefix": "deque",
 		"body": [
 		  "from collections import deque",
@@ -184,7 +186,7 @@
 		"description": "キュー"
 	  },
 
-	"FACTORIAL": {
+	"階乗計算": {
 		"prefix": "factorial",
 		"body": [
 			"from math import factorial    #階乗計算",
@@ -193,7 +195,7 @@
 		"description": "階乗計算"
 	},
 
-	"BISECT": {
+	"二分探索": {
 		"prefix": "bisect",
 		"body": [
 			"from bisect import bisect_left, bisect_right  # return index",
@@ -209,7 +211,7 @@
 		"description": "二分探索"
 	},
 
-	"COMBINATIONS": {
+	"(nCr) 組み合わせの数を返す": {
 		"prefix": "combinations",
 		"body": [
 			"def cmb(n, r, MOD=1):",
@@ -230,7 +232,7 @@
 		"description": "(nCr) 組み合わせの数を返す"
 	},
 
-	"BFS_MAZE": {
+	"幅優先探索(迷路)": {
 		"prefix": "bfs_maze",
 		"body": [
 		  "def bfs(sy,sx,gy,gx,c,visited):",
@@ -252,7 +254,7 @@
 		"description": "幅優先探索(迷路)"
 	  },
 
-	"BFS_TREE": {
+	"幅優先探索(木)": {
 		"prefix": "bfs_tree",
 		"body": [
 		  "graph = [[] for _ in range(N)]",
@@ -288,7 +290,7 @@
 		"description": "幅優先探索(木)"
 	  },
 
-	"HEAPQ": {
+	"優先度付きキュー": {
 		"prefix": "heapq",
 		"body": [
 			"from heapq import (",
@@ -302,7 +304,7 @@
 		"description": "優先度付きキュー"
 	},
 
-	"BIT_ALL_SEARCH": {
+	"bit全探索": {
 		"prefix": "bit_all_search",
 		"body": [
 		  "from itertools import product",
@@ -318,7 +320,7 @@
 		"description": "bit全探索"
 	},
 
-	"DIVISORS": {
+	"約数列挙": {
 		"prefix": "divisors",
 		"body": [
 			"def divisors(n):",
@@ -336,7 +338,7 @@
 		"description": "約数列挙"
 	},
 
-	"SAIKI": {
+	"再帰上限のup": {
 		"prefix": "saiki",
 		"body": [
 			"import sys",
@@ -345,7 +347,7 @@
 		"description": "再帰上限のup"
 	},
 
-	"Multi Sort": {
+	"多次元配列のソート": {
 		"prefix": "multi_sort",
 		"body": [
 		  "A = [[1, 2], [3, 1], [2, 5]]",
@@ -355,7 +357,7 @@
 		"description": "多次元配列のソート"
 	},
 
-	"binrary_tree": {
+	"二分木探索": {
 		"prefix": "binary_tree",
 		"body": [
 		  "import random #入力整数列Aの生成に使用",
@@ -432,7 +434,7 @@
 		"description": "二分木探索"
 	  },
 
-	  "UnionFindTree": {
+	  "UnionFind木": {
 		"prefix": "unionfindtree",
 		"body": [
 		  "class UnionFind():",
@@ -496,7 +498,7 @@
 		"description": "UnionFind木"
 	},
 
-	"Kruskal": {
+	"クラスカル法": {
 		"prefix": "kuraskal",
 		"body": [
 		  "#union-find木",
@@ -580,7 +582,7 @@
 		"description": "クラスカル法"
 	},
 
-	"WarshallFloyd": {
+	"ワーシャルフロイド法": {
 		"prefix": "warshall_floyd",
 		"body": [
 		  "#d[i][j]は2頂点間i, j間の移動コストを格納, Vは頂点数",
@@ -595,7 +597,7 @@
 		"description": "ワーシャルフロイド法"
 	},
 
-	"POINT_LINE_DIFF": {
+	"点と直線関係": {
 		"prefix": "point_line",
 		"body": [
 		  "def get_line_formula(x1, y1, x2, y2):",
@@ -628,7 +630,7 @@
 		"description": "点と直線関係"
 	},
 
-	"BFS": {
+	"深さ優先探索（not再帰）": {
 		"prefix": "bfs",
 		"body": [
 		  "from collections import deque",
@@ -646,7 +648,7 @@
 		"description": "深さ優先探索（not再帰）"
 	},
 
-	"CHECK_PERFECT": {
+	"完全数の判定": {
 		"prefix": "check_perfect",
 		"body": [
 		  "def check_perfect(n):",
@@ -670,7 +672,7 @@
 		"description": "完全数の判定"
 	},
 
-	"PATTERN_MATCH": {
+	"任意の文字列含むか判定": {
 		"prefix": "pattern_match",
 		"body": [
 		  "import re",
@@ -683,7 +685,7 @@
 		"description": "任意の文字列含むか判定"
 	},
 
-	"MAKE_DIVISORS": {
+	"約数・公約数の列挙": {
 		"prefix": "yakusu_rekkyo",
 		"body": [
 		  "from math import gcd",
@@ -715,7 +717,7 @@
 		"description": "約数・公約数の列挙"
 	},
 
-	"": {
+	"範囲Nまでの素数を高速列挙": {
 		"prefix": "search_prime",
 		"body": [
 		  "import numpy as np",
@@ -734,7 +736,7 @@
 		"description": "範囲Nまでの素数を高速列挙"
 	},
 
-	"素数列挙": {
+	"素数列挙；エラトステレスの篩": {
 		"prefix": "eratosthenes",
 		"body": [
 		  "# O(NloglogN)",
