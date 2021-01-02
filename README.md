@@ -36,7 +36,7 @@ Name: Competitive programming
 |  ダイクストラ  |  ABC_016 C  |
 |  ワーシャルフロイド  |  ABC_012 D  |
 |  クラスカル法  |    |
-|  再帰関数  |  ABC_026 C, ABC_115 D, 2nd_PAST E, ABC_184 D |
+|  再帰関数  |  ABC_026 C, ABC_115 D, 2nd_PAST E, ABC_184 D, ABC_115_D |
 |  貪欲法  |  ABC_024 C, ABC_161 E, キーエンスプログラミングコンテスト2020 B, CODE_FESTIVAL_2016_qual_A C  |
 |  累積和  |  Tenka1_Programmer_Beginner_Contest_2019 C, ABC_122 C, ABC_163 D  |
 |  しゃくとり法  |  ABC_038 C, ABC_130 D  |
@@ -68,3 +68,5 @@ Name: Competitive programming
 - [Pythonの辞書型の様々なソート方法](https://techacademy.jp/magazine/19309)
 - PythonのCounter、クラスにはmost_common()というメソッドがあります。これは(要素, 出現回数)というタプルを出現回数順に並べたリストを返します。
 - プログラミングの静的チェックにて、()の位置判定を正しく行うアルゴリズム->（ABC064）
+- [パティを重ねる再帰問題 ABC115](https://atcoder.jp/contests/abc115/tasks/abc115_d)
+- [-n進数問題](https://atcoder.jp/contests/abc105/tasks/abc105_c)
