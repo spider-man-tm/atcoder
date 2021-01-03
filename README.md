@@ -50,7 +50,8 @@ Name: Competitive programming
 |  Name  |  Problem No  |
 | ---- | ---- |
 |  Union-Find  |  ABC_157 D, ARC_032 B, ABC_075 C  |
-|  木  |    |
+|  根付き木  |  ABC_187 E  |
+|  二分探索木  |    |
 |  グラフ  |    |
 |  優先度付きキュー  |  ABC_141 D, 2ndPAST F |
 |  キュー  |  ABC_161 D  |
