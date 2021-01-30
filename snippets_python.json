@@ -682,7 +682,7 @@
 	},
 
 	"深さ優先探索（not再帰）": {
-		"prefix": "bfs",
+		"prefix": "dfs",
 		"body": [
 		  "from collections import deque",
 		  "",
@@ -827,5 +827,30 @@
 		  "cumsumA = list(np.array(A).cumsum())"
 		],
 		"description": "累積和"
-	  }
+    },
+    
+    "文字列リストの回転": {
+      "prefix": "rotate_list",
+      "body": [
+        "def helper(v):",
+        "    for i in range(len(v)):",
+        "        print(*v[i])",
+        "",
+        "",
+        "def rotate(v, k=1):",
+        "    \"\"\"",
+        "    文字列リストの回転",
+        "    k: 1 -> 左に90°",
+        "    K: 2 -> 180°",
+        "    \"\"\"",
+        "    import numpy as np",
+        "    v2 = [list(i) for i in v]",
+        "    v2 = np.array(v2)",
+        "    v2 = np.rot90(v2, k)",
+        "    v2 = v2.tolist()",
+        "    v3 = [''.join(i) for i in v2]",
+        "    return v3"
+      ],
+      "description": "文字列リストの回転"
+    }
 }

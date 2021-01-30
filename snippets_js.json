@@ -1,13 +1,15 @@
 {
-  "js標準入力": {
+  "js入力と出力": {
     "prefix": "js_input",
     "body": [
       "function Main(input) {",
-      "  let inp = input.split(\"\\n\")",
+      "  let inp = input.split(\"\\n\");",
       "  // 整数の入力",
       "  let N = parseInt(inp[0]);",
       "  // 2つ以上の整数の入力",
-      "  let AB = inp[1].split(\" \");",
+      "  let [A, B] = inp[1].split(\" \");",
+      "  A = Number(A);",
+      "  B = Number(B);",
       "  // リストの入力",
       "  let L = inp[2].split(\" \").map(n => parseInt(n));",
       "  // 二次元配列の入力",
@@ -16,7 +18,7 @@
       "",
       "Main(require(\"fs\").readFileSync(\"/dev/stdin\", \"utf8\"));"
     ],
-    "description": "js標準入力"
+    "description": "js入力と出力"
   },
 
   "ソート": {

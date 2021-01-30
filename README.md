@@ -40,7 +40,7 @@ Name: Competitive programming
 |  貪欲法  |  ABC_024 C, ABC_161 E, キーエンスプログラミングコンテスト2020 B, CODE_FESTIVAL_2016_qual_A C  |
 |  累積和  |  Tenka1_Programmer_Beginner_Contest_2019 C, ABC_122 C, ABC_163 D  |
 |  しゃくとり法  |  ABC_038 C, ABC_130 D  |
-|  いもす法  |  東京海上日動プログラミングコンテスト2020 C  |
+|  いもす法  |  東京海上日動プログラミングコンテスト2020 C, ABC_188 D(圧縮ver)  |
 
 <br>
 <br>
@@ -52,7 +52,7 @@ Name: Competitive programming
 |  Union-Find  |  ABC_157 D, ARC_032 B, ABC_075 C  |
 |  根付き木  |  ABC_187 E  |
 |  二分探索木  |    |
-|  グラフ  |    |
+|  DAG（Directed Acyclic Graph）<br>閉路を含まない有向グラフ  |  ABC_188 E  |
 |  優先度付きキュー  |  ABC_141 D, 2ndPAST F |
 |  キュー  |  ABC_161 D  |
 
